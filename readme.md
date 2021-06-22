@@ -1,18 +1,12 @@
 ### Working page:  
-https://lisnyk-m-hw-06.herokuapp.com/
+https://ads-creator.herokuapp.com/
 
 ### Endpoints:  
-POST: /auth/register  
-POST: /auth/login  
-POST: /auth/logout  Authorization: "Bearer token"  
-GET: /users/current  Authorization: "Bearer token"  
-PATCH: /users  
-
-GET: /contacts  
-GET: /contacts/:contactId  
-POST: /contacts  
-PATCH: /contacts/:contactId  
-DELETE: /contacts/:contactId  
+    <ul class="list">
+        <li>POST /create-ad</li>
+        <li>GET: /ads/:id/</li>   
+        <li>GET: /ads</li>
+    </ul> 
 
 ### Query:  
 page, limit, sub ["free", "pro", "premium"]
