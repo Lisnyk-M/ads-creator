@@ -15,7 +15,8 @@ GET:  /ads
                     "links": ["https://www.images-holder/2123.jpg", "https://www.images-holder/23.jpg",    "https://www.images-holder/123.jpg"]   
                 } 
 
-### for recive ad:                       
+### for recive ad:   
+                optional param: fields                   
                 valid value for param fields: 'description', 'links'   
                 example: GET  /ads/3432323232344?fields=description,links   
                 or: GET  /ads/3432323232344?fields=links   
