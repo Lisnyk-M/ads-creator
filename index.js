@@ -29,7 +29,7 @@ function logErrors(err, req, res, next) {
 app.use(json());
 app.use(morgan('combined'));
 app.use('/', adsRouter);
-app.use( express.static('build'));
+app.use( express.static('public'));
 
 app.use('/upload', (req, res, next) => {
     res.sendFile(__dirname + "/index.html");
