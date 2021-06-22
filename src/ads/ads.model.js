@@ -5,6 +5,7 @@ const adsSchema = Schema({
     title: {
         type: String,
         required: true,
+        maxLength: 200,
     },
     price: {
         type: Number,
