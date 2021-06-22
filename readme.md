@@ -28,4 +28,4 @@ GET:  /ads
                 example: GET  /ads?title=car&sort_by_price=-1    
                 or: GET  /ads   
                 param title a snippet of text that will be searched in the ad title      
-                or: GET                       
+                                      
