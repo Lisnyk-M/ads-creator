@@ -105,7 +105,8 @@ class AdsController {
                 .find({ title: pattern })
                 .sort({ 'price': intSortByPrice })
                 .sort({ 'date': intSortByDate })
-                .limit(limit);
+                .limit(limit)
+                .page(page);
 
             return ads.length > 0
                 ? res.status(200).send(ads)
