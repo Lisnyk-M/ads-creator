@@ -6,7 +6,7 @@ const adSchema = require('../schemas/create.ad.schema');
 const idSchema = require('../schemas/id.schema');
 const fieldsSchema = require('../schemas/fields.schema');
 
-const PAGE_DEFAULT = 1;
+const PAGE_DEFAULT = 0;
 const LIMIT_DEFAULT = 10;
 
 class AdsController {
@@ -106,7 +106,7 @@ class AdsController {
                 .sort({ 'price': intSortByPrice })
                 .sort({ 'date': intSortByDate })
                 .limit(limit)
-                .skip(page);
+                .skip(page * limit);
                 console.log('page: ', page)
 
             return ads.length > 0
