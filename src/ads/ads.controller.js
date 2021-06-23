@@ -106,7 +106,8 @@ class AdsController {
                 .sort({ 'price': intSortByPrice })
                 .sort({ 'date': intSortByDate })
                 .limit(limit)
-                .page(page);
+                .skip(page);
+                console.log('page: ', page)
 
             return ads.length > 0
                 ? res.status(200).send(ads)
